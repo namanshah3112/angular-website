@@ -1,0 +1,28 @@
+<div  class="wid" id="bor" fxLayout="column" fxLayoutAlign="space-around center" [formGroup]="UserDetails">
+    <br>
+   <mat-card>
+       <mat-card-content><strong>Login Form</strong></mat-card-content>
+    <mat-card-content>
+        <mat-form-field appearance="outline" fxFlex="100">
+            <mat-label>Enter Username/Email</mat-label>
+            <input matInput formControlName="email" >
+            <mat-error  style="color: red" *ngIf="email && email.invalid && email.touched"> Username or Email-ID required </mat-error>
+        </mat-form-field>
+    </mat-card-content>
+    <mat-card-content>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter Password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+              <mat-error  style="color: red" *ngIf="password && password.invalid && password.touched"> Password required </mat-error >
+
+        </mat-form-field>
+    </mat-card-content>
+    <div fxLayoutAlign="center center" > <button mat-raised-button color="warn" (click)="submitdata()">Login</button></div>
+    <br>
+    <div fxLayoutAlign="center center" >New User ?  &nbsp;<a [routerLink]="['/register']"> Click here to register</a> </div>
+   </mat-card>
+
+</div>

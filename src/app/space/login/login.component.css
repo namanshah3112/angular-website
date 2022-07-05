@@ -1,0 +1,12 @@
+.wid{
+    width: 100%;
+}
+.marg{
+    margin-top: -35px;
+    margin-bottom: 15px;
+    margin-left: 3px;
+    
+}
+.center{
+    align-content: space-between;
+}

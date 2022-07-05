@@ -1,0 +1,98 @@
+
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>HOME</span>
+      <span class="example-spacer"></span>
+     <div class="wid" fxLayout="column" fxLayoutAlign="center end" ><a mat-button routerLink="/login" >Login</a></div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+    <mat-carousel timings="250ms ease-in"[autoplay]="false"color='accent' maxWidth="auto"[loop]="true"[hideArrows]="false"[hideIndicators]="true" [useKeyboard]="true"[useMouseWheel]="false"orientation="ltr">
+        <mat-carousel-slide #matCarouselSlide  *ngFor="let slide of slides; let i = index"  [image]="slide.image"  overlayColor="#00000030" [hideOverlay]="false"></mat-carousel-slide>
+    </mat-carousel>
+  <div fxLayout="row wrap" fxLayoutAlign="space-evenly  center" xLayoutGap="22">
+    <div class="example-card">
+       <a [routerLink]="['/routePath']">
+         <mat-card class="mat-card" id="marg">
+            <mat-card-header class="center">
+                <mat-card-title >APPLE</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="img-card" src="assets/apple1.jpg" alt="">
+
+            </mat-card-content>
+        </mat-card>
+    </a>  
+    </div>
+    <div class="example-card">
+        <a [routerLink]="['/routePath']">
+        <mat-card id="marg">
+            <mat-card-header class="center" >
+                <mat-card-title>SAMSUNG</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="img-card" src="assets/samsung.jpeg" alt="">
+            </mat-card-content>
+        </mat-card> 
+        </a> 
+    </div>
+    <div class="example-card">
+        <a [routerLink]="['/routePath']">
+        <mat-card id="marg">
+            <mat-card-header class="center">
+                <mat-card-title>ONEPLUS</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="img-card" src="assets/oneplus.png" alt="">
+            </mat-card-content>
+        </mat-card>  
+        </a>
+    </div>
+    <div class="example-card">
+        <a [routerLink]="['/routePath']">
+        <mat-card id="marg">
+            <mat-card-header class="center">
+                <mat-card-title>GooglePixel</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="img-card" src="assets/GooglePixel.jpeg" alt="">
+            </mat-card-content>
+        </mat-card>  
+        </a>
+    </div>
+    <div class="example-card">
+        <a [routerLink]="['/routePath']">
+        <mat-card id="marg">
+            <mat-card-header class="center">
+                <mat-card-title>OPPO</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="img-card" src="assets/oppo.jpg" alt="">
+            </mat-card-content>
+        </mat-card>  
+        </a>
+    </div>
+    <div class="example-card">
+        <a [routerLink]="['/routePath']">
+        <mat-card id="marg">
+            <mat-card-header class="center">
+                <mat-card-title>VIVO</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="img-card" src="assets/vivo.jpeg" alt="">
+            </mat-card-content>
+        </mat-card>  
+        </a>
+    </div>
+    <div class="example-card">
+        <a [routerLink]="['/routePath']">
+        <mat-card id="marg">
+            <mat-card-header class="center">
+                <mat-card-title>XIAOMI</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="img-card" src="assets/xiaomi.jpeg" alt="">
+            </mat-card-content>
+        </mat-card>  
+        </a>
+    </div>
+</div>  

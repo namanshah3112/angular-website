@@ -1,0 +1,195 @@
+
+<h4 fxLayout="column" fxLayoutAlign="space-evenly center">PERSONAL DETAILS</h4>
+<form style="padding: 15px;" fxLayout="column" class="weig" fxLayoutAlign="space-evenly center">
+
+    <div  class="weig" fxLayout="row" fxLayoutAlign="start start">
+      Name Details
+    </div>
+
+    <div [formGroup]="details" class="weig" fxLayout="row" fxLayoutAlign="start " fxLayoutGap="25px"> 
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>Enter First Name</mat-label>
+        <input matInput placeholder="Ex: Naman " formControlName="fname">
+        <mat-error style="color: red" *ngIf="ErrorFname && ErrorFname.invalid && ErrorFname.touched"> First Name required </mat-error>
+      </mat-form-field>
+
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>Enter Middle Name</mat-label>
+        <input matInput placeholder="Ex: Fathers/mothers name " formControlName="Mname">
+        <mat-error style="color: red" *ngIf="ErrorMname && ErrorMname.invalid && ErrorMname.touched"> Middle Name required </mat-error>
+
+      </mat-form-field>
+
+      <mat-form-field  fxFlex="25" appearance='outline'>
+        <mat-label>Enter Last Name</mat-label>
+        <input matInput placeholder="Ex: Shah " formControlName="Lname">
+        <mat-error style="color: red" *ngIf="ErrorLname && ErrorLname.invalid && ErrorLname.touched"> Last Name required </mat-error>
+
+      </mat-form-field>
+
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>Enter Guardian's Name</mat-label>
+        <input matInput placeholder="Ex: Alpesh Shah ">
+        </mat-form-field>
+    </div>
+    <div class="weig" fxLayout="row" fxLayoutAlign="start start">
+      Contect Details
+    </div>
+      <div [formGroup]="details" class="weig" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="25px">
+        <div>
+          <mat-form-field  appearance='outline'>
+            <mat-label>Enter Mobile Number</mat-label>
+            <input matInput placeholder="Ex +91" formControlName="Mnumber" required>
+            <mat-error style="color: red" *ngIf="Errornumber && Errornumber.invalid && Errornumber.touched"> Mobile Number required </mat-error>
+
+            </mat-form-field>
+        </div>
+
+        <div [formGroup]="details" > 
+          <mat-form-field  appearance='outline'>
+            <mat-label>Enter Telephone Number</mat-label>
+            <input matInput placeholder=""  formControlName="Tnumber" required>
+            <mat-error style="color: red" *ngIf="ErrorTelephone && ErrorTelephone.invalid && ErrorTelephone.touched"> Telephone Number required </mat-error>
+            </mat-form-field>
+        </div>
+        
+        <div [formGroup]="details">
+          <mat-form-field  appearance='outline'>
+            <mat-label>Enter Email-ID</mat-label>
+            <input matInput placeholder="Ex : yourid@gmail.com" formControlName="email" required>
+            <mat-error style="color: red" *ngIf="Erroremail && Erroremail.invalid && Erroremail.touched"> email required </mat-error>
+          </mat-form-field>
+        </div>   
+
+      </div>
+
+    <div class="weig" fxLayout="row" fxLayoutAlign="start start">
+      Address Details
+    </div><br>
+
+    <div class="weig" fxLayout="row" fxLayoutAlign="start start">
+      Permanent Address
+    </div>
+
+    <div [formGroup]="details" fxLayout="row" fxLayoutAlign=" center" class="weig" fxLayoutGap=" 30px">
+      <mat-form-field fxFlex="50" appearance='outline'> 
+        <mat-label>Lane1</mat-label>
+        <input matInput placeholder="Ex: CG-ROAD">
+      </mat-form-field>
+      <mat-form-field fxFlex="50" appearance='outline'> 
+        <mat-label>Lane2</mat-label>
+        <input matInput placeholder="Ex: Socity Name">
+      </mat-form-field>
+    </div>
+
+
+    <div fxLayout="row" fxLayoutAlign=" center" class="weig" fxLayoutGap=" 20px">
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>Country</mat-label>
+        <input matInput placeholder="Ex: India">
+      </mat-form-field>
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>State</mat-label>
+        <input matInput placeholder="Ex: Gujarat">
+        </mat-form-field>
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>City</mat-label>
+        <input matInput placeholder="Ex: Ahmedabad">
+      </mat-form-field>
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>Pincode</mat-label>
+        <input matInput placeholder="Ex: 830051">
+      </mat-form-field>
+      
+      
+    </div>
+
+    <div class="weig" fxLayout="row" fxLayoutAlign="start start">
+      Residential Address
+    </div>
+    <div fxLayout="row" fxLayoutAlign=" center" class="weig" fxLayoutGap=" 30px">
+      <mat-form-field fxFlex="50" appearance='outline'> 
+        <mat-label>Lane1</mat-label>
+        <input matInput placeholder="Ex: CG-ROAD">
+      </mat-form-field>
+      <mat-form-field fxFlex="50" appearance='outline'> 
+        <mat-label>Lane2</mat-label>
+        <input matInput placeholder="Ex: Socity Name">
+      </mat-form-field>
+    </div>
+
+
+    <div fxLayout="row" fxLayoutAlign=" center" class="weig" fxLayoutGap=" 20px">
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>Country</mat-label>
+        <input matInput placeholder="Ex: India">
+      </mat-form-field>
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>State</mat-label>
+        <input matInput placeholder="Ex: Gujarat">
+        </mat-form-field>
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>City</mat-label>
+        <input matInput placeholder="Ex: Ahmedabad">
+      </mat-form-field>
+      <mat-form-field fxFlex="25" appearance='outline'>
+        <mat-label>Pincode</mat-label>
+        <input matInput placeholder="Ex: 830051">
+      </mat-form-field>
+      
+      
+    </div>
+    <div>
+      Other Details
+    </div>
+
+    <div [formGroup]="details" class="weig" fxLayoutGap='20px'>
+      <mat-form-field  appearance='outline'>
+        <mat-label>DOB</mat-label>
+        <input matInput [matDatepicker]="picker" placeholder=" dd/mm/yyyy" formControlName="tdate" [max]='today'>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+  <mat-error style="color: red" *ngIf="ErrorDate && ErrorDate.invalid && ErrorDate.touched"> DOB required </mat-error>
+
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Choose Gender</mat-label>
+          <select matNativeControl formControlName="Gender" required>
+            <option value='' selected disabled></option>
+            <option value="male">Male</option>
+            <option value="female" >Female</option>
+            <option value="others" >Others</option>
+          </select>
+          <mat-error style="color: red" *ngIf="ErrorGender && ErrorGender.invalid && ErrorGender.touched"> Gender required </mat-error>
+      </mat-form-field>
+      <mat-form-field  appearance='fill'>
+        <mat-label>Blood Group</mat-label>
+        <select matNativeControl formControlName="Blood" required>
+          <option value='' selected disabled></option>
+          <option value="A+">A+</option>
+          <option value="A-" >A-</option>
+          <option value="B+">B+</option>
+          <option value="B-" >B-</option>
+          <option value="O+">O+</option>
+          <option value="O-" >O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-" >AB-</option>
+        </select>  
+        <mat-error style="color: red" *ngIf="ErrorBlood && ErrorBlood.invalid && ErrorBlood.touched"> Blood required </mat-error>
+      </mat-form-field>
+      <mat-form-field  appearance='fill'>
+        <mat-label>Marital Status</mat-label>
+        <select matNativeControl formControlName="Status" required>
+          <option value='' selected disabled></option>
+          <option value="Married">Married</option>
+          <option value="Widowed" >Widowed</option>
+          <option value="Separated">Separated</option>
+          <option value="Divorced" >Divorced</option>
+          <option value="Single">Single</option>  
+        </select>  
+        <mat-error style="color: red" *ngIf="ErrorStatus && ErrorStatus.invalid && ErrorStatus.touched"> Status required </mat-error>
+      </mat-form-field>
+    </div> 
+   <input type="button" value="submit" (click)="valuech()">
+</form> 
